@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.list_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+}
+.list_box li {
+  padding: 100px;
+  background: red;
+  font-size: 30px;
+  color: white;
+}
+
+#speak_btn {
+  font-size: 100px;
+  background: blue;
+  color: white;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 50px 0;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

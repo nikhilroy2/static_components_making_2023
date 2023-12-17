@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F8F8F8;
+}
+
+@mixin profile_box {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    cursor: pointer;
+    background: #50514F;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.post_box_wrapper {
+    background: #FFFFFF;
+
+
+    .profile_box {
+        @include profile_box;
+    }
+
+    .post_field_box {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        .post_field,
+        .post_field_desc {
+            width: 100%;
+            height: 70px;
+            border: 1px solid rgba(85, 85, 85, 0.2);
+            outline: none;
+            box-shadow: none;
+            border-radius: 8px;
+            font-size: 25px;
+            padding: 10px 14px;
+            resize: none;
+            transition: .3s;
+
+            &:hover,
+            &:valid {
+                height: 100px
+            }
+
+            &::placeholder {
+                color: rgba(85, 85, 85, 0.5);
+            }
+        }
+
+        .post_field_desc {
+            font-size: 16px;
+            height: 0px;
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s;
+            position: absolute;
+        }
+
+        .post_field:focus~.post_field_desc,
+        .post_field:valid~.post_field_desc,
+        .post_field_desc.active_desc {
+            height: 100px;
+            opacity: 1;
+            visibility: visible;
+            position: static;
+        }
+    }
+
+    .btn_post {
+        background: #f1f1f1;
+        color: #3e3e3e;
+        padding: 5px 15px;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        display: inline-block;
+        border-radius: 20px;
+        transition: .3s;
+
+        &:hover {
+            background: #E0E0E0;
+        }
+    }
+}
+
+.post_box_content_wrapper {
+    .post_list {
+        background: #fff;
+        .profile_box {
+            @include profile_box
+        }
+        .post_list_footer p{
+            line-height: 30px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+    }
+
+}

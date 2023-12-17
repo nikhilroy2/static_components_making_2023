@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f9f9f9;
+}
+.game_screen{
+    width: 1000px;
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.356);
+    border-radius: 12px;
+    .road_lane{
+        width: 12.5%;
+        height: 100%;
+        border-right: 3px dashed black;
+        position: absolute;
+        top: 0;
+        left: calc(12.5% * var(--i));
+        .vehicle{
+            position: absolute;
+        }
+    }
+}

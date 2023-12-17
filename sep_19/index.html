@@ -1,11 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container py-5">
+        <div class="post_box_wrapper p-3 rounded">
+            <div class="d-flex align-items-start mb-3">
+                <div class="profile_box p-3 shadow-3 me-3">
+                    FR
+                </div>
+                <div class="post_field_box">
+                    <textarea id="title_input_field" required placeholder="What's on your mind?"
+                        class="post_field"></textarea>
+                    <!-- <textarea id="desc_input_field" placeholder="Description..." class="post_field_desc"></textarea> -->
+
+                    <ul class="list-unstyled d-flex align-items-center my-2">
+                        <li class="me-3">
+                            <button class="btn_post">
+                                <i class="fas fa-camera"></i>
+                                <span>Add Photo</span>
+                            </button>
+                        </li>
+
+                        <li class="me-3">
+                            <button class="btn_post">
+                                <i class="fas fa-calendar-week"></i>
+                                <span>Add Event</span>
+                            </button>
+                        </li>
+
+                        <li class="me-3">
+                            <button class="btn_post">
+                                <i class="fas fa-check-square"></i>
+                                <span>Add To-Do</span>
+                            </button>
+                        </li>
+
+                        <li class="me-3">
+                            <button class="btn_post">
+                                <span>Add Location</span>
+                            </button>
+                        </li>
+
+                        <li class="">
+                            <button class="btn_post">
+                                <span>Add GIF</span>
+                            </button>
+                        </li>
+
+                    </ul>
+                    <ul class="list-unstyled d-flex align-items-center justify-content-end">
+                        <li class="me-3">
+                            <button class="btn_post px-4">
+                                Cancel
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn_post px-4 bg-primary text-white">
+                                Share
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="post_box_content_wrapper my-4">
+            <ul class="list-unstyled p-0">
+
+                <!-- post list -->
+                <li class="mb-3">
+                    <div class="post_list  p-4">
+                        <div class="post_list_top">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="profile_box p-3 shadow-3 me-3">
+                                    FR
+                                </div>
+                                <div class="profile_box_content">
+                                    <div class="d-flex align-items-center">
+                                        <!-- username -->
+                                        <strong class="me-2">Fenr</strong>
+                                        <!-- post type -->
+                                        <span>has created an event</span>
+                                        <!-- time -->
+                                    </div>
+                                    <span>
+                                        9:10 AM
+                                    </span>
+                                </div>
+                                <div class="profile_box_control ms-auto d-flex align-items-center">
+                                    <button class="btn btn-muted shadow-0 px-1 me-2">
+                                        <i class="fas fa-heart fa-2x"></i>
+                                    </button>
+                                    <div class="dropdown">
+                                        <button class="btn btn-muted shadow-0 px-1" type="button"
+                                            id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-2x"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                            aria-labelledby="dropdownMenuButton">
+                                            <li> <button
+                                                    class="btn btn-muted text-danger shadow-0 w-100 text-start btn-lg">
+                                                    <i class="fas fa-trash text-danger me-2"></i>
+                                                    Delete
+                                                </button>
+                                            </li>
+                                            <li> <button
+                                                    class="btn btn-muted text-black shadow-0 w-100 text-start btn-lg">
+                                                    <i class="fas fa-edit text-black me-2"></i>
+                                                    Edit
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_list_body py-3">
+                            <!-- post_title -->
+                            <h4>
+                                Lorem, ipsum dolor.
+                            </h4>
+                        </div>
+                        <div class="post_list_footer">
+
+                        </div>
+
+                    </div>
+                </li>
+
+
+                <!-- post list -->
+                <li class="mb-3">
+                    <div class="post_list  p-4">
+                        <div class="post_list_top pb-3">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="profile_box p-3 shadow-3 me-3">
+                                    FR
+                                </div>
+                                <div class="profile_box_content">
+                                    <div class="d-flex align-items-center">
+                                        <!-- username -->
+                                        <strong class="me-2">Fenr</strong>
+                                        <!-- post type -->
+                                        <span>has created an event</span>
+                                        <!-- time -->
+                                    </div>
+                                    <span>
+                                        9:10 AM
+                                    </span>
+                                </div>
+                                <div class="profile_box_control ms-auto d-flex align-items-center">
+                                    <button class="btn btn-muted shadow-0 px-1 me-2">
+                                        <i class="fas fa-heart fa-2x"></i>
+                                    </button>
+                                    <div class="dropdown">
+                                        <button class="btn btn-muted shadow-0 px-1" type="button"
+                                            id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-2x"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                            aria-labelledby="dropdownMenuButton">
+                                            <li> <button
+                                                    class="btn btn-muted text-danger shadow-0 w-100 text-start btn-lg">
+                                                    <i class="fas fa-trash text-danger me-2"></i>
+                                                    Delete
+                                                </button>
+                                            </li>
+                                            <li> <button
+                                                    class="btn btn-muted text-black shadow-0 w-100 text-start btn-lg">
+                                                    <i class="fas fa-edit text-black me-2"></i>
+                                                    Edit
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_list_body pb-3">
+                            <!-- post_title -->
+                            <h4>
+                                Lorem, ipsum dolor.
+                            </h4>
+                            <!-- post img -->
+                            <div class="text-center">
+                                <img src="https://api.familywall.com/media/12981536_7t5%3BBL5eoUEPowr12FIc366QNbS_34867407?w=1024&h=1024&s=r"
+                                    alt="" style="max-height: 300px;">
+                            </div>
+                            <!-- post description -->
+                        </div>
+                        <div class="post_list_footer">
+                            <p class="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, pariatur nihil neque
+                                maxime quas voluptatibus ipsa eligendi. Repudiandae reprehenderit eaque minus magni
+                                voluptatibus, laborum nulla possimus nisi non tempore modi perspiciatis iste quam
+                                molestias aperiam beatae dignissimos debitis harum itaque id ut sapiente fuga
+                                praesentium. Magnam architecto nemo accusantium suscipit, vero iure sit delectus eos
+                                magni porro, nihil maxime exercitationem in nesciunt sunt natus at et! Ullam laborum
+                                quae molestias, assumenda debitis nihil a et architecto minima quas nostrum nisi aperiam
+                                consectetur impedit laboriosam unde vel eius dolorum expedita saepe tenetur itaque
+                                perspiciatis! Veniam, itaque qui quaerat obcaecati quasi facere, nihil expedita non
+                                animi alias debitis mollitia aperiam repellat eligendi soluta! Vel animi quo expedita
+                                alias aperiam ex. Eius ut nemo facilis fugiat corporis saepe, dolore cum temporibus iste
+                                quod deleniti consectetur quo vel vero quisquam illum! Itaque repellat blanditiis
+                                deserunt sit, ullam placeat porro dolor, adipisci ratione minima voluptatum laudantium
+                                nemo delectus quis reprehenderit voluptas corporis praesentium. Hic voluptatum dolore
+                                ullam! Perferendis officia vero alias hic temporibus. Porro nihil earum tenetur
+                                praesentium voluptatibus, rem atque accusamus placeat esse ipsum magnam aut quibusdam
+                                eveniet est in quis unde voluptas nobis aliquid architecto expedita possimus
+                                consequatur? Fuga expedita possimus dignissimos nemo?
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+
+                <!-- post list -->
+                <li class="mb-3">
+                    <div class="post_list  p-4">
+                        <div class="post_list_top pb-3">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="profile_box p-3 shadow-3 me-3">
+                                    FR
+                                </div>
+                                <div class="profile_box_content">
+                                    <div class="d-flex align-items-center">
+                                        <!-- username -->
+                                        <strong class="me-2">Fenr</strong>
+                                        <!-- post type -->
+                                        <span>has created an event</span>
+                                        <!-- time -->
+                                    </div>
+                                    <span>
+                                        9:10 AM
+                                    </span>
+                                </div>
+                                <div class="profile_box_control ms-auto d-flex align-items-center">
+                                    <button class="btn btn-muted shadow-0 px-1 me-2">
+                                        <i class="fas fa-heart fa-2x"></i>
+                                    </button>
+                                    <div class="dropdown">
+                                        <button class="btn btn-muted shadow-0 px-1" type="button"
+                                            id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-2x"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                            aria-labelledby="dropdownMenuButton">
+                                            <li> <button
+                                                    class="btn btn-muted text-danger shadow-0 w-100 text-start btn-lg">
+                                                    <i class="fas fa-trash text-danger me-2"></i>
+                                                    Delete
+                                                </button>
+                                            </li>
+                                            <li> <button
+                                                    class="btn btn-muted text-black shadow-0 w-100 text-start btn-lg">
+                                                    <i class="fas fa-edit text-black me-2"></i>
+                                                    Edit
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_list_body pb-3">
+                            <!-- post_title -->
+
+                            <!-- post img -->
+                            <div class="text-center">
+                                <img src="https://api.familywall.com/media/12981536_7t5%3BBL5eoUEPowr12FIc366QNbS_34867407?w=1024&h=1024&s=r"
+                                    alt="" style="max-height: 300px;">
+                            </div>
+                            <!-- post description -->
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'
+        integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=='
+        crossorigin='anonymous'></script>
+    <script>
+        $('#title_input_field').on('focus', e => {
+            $('body').css({
+                opacity: 'rgba(0,0,0,.5)'
+            })
+            $('#desc_input_field').addClass('active_desc')
+        })
+        $(document).on('click', function (e) {
+            var isInsidePostBox = $(e.target).closest('.post_box_wrapper').length > 0;
+
+            if (!isInsidePostBox) {
+                // Clicked outside of post_box_wrapper
+                removePostEffect() // init
+            }
+        });
+
+        function removePostEffect() {
+            $('body').removeAttr('style');
+            $('#desc_input_field').removeClass('active_desc');
+        }
+    </script>
 </body>
+
 </html>

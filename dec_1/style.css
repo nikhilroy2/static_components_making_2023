@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .loader .loader_text {
+  display: flex;
+  font-size: 35px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+body .loader .loader_text span {
+  opacity: 0.5;
+  animation: 3s ease-out animate_text infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate_text {
+  0% {
+    opacity: 0.5;
+    color: #0050B2;
+  }
+  100% {
+    color: #000;
+    filter: hue-rotate(3500deg);
+    opacity: 1;
+    text-shadow: 1px 1px 3px black;
+  }
+}/*# sourceMappingURL=style.css.map */

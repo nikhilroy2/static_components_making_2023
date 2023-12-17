@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #EFEFEF;
+        }
+
+        #photo_upload_section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #drag_and_drop_option {
+            width: 300px;
+            height: 200px;
+            border: 1px dashed var(--mdb-dark);
+            cursor: grab;
+            user-select: none;
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- photo upload section -->
+    <section id="photo_upload_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-md-10 col-lg-8">
+                    <div class="bg-white text-center p-3 p-md-5 rounded">
+                        <h4>
+                            Choose Source to
+                        </h4>
+                        <p class="text-primary mb-5">Add Photo</p>
+
+                        <div class="btn_wrapper mx-auto" style="width: 300px">
+                            <button class="btn btn-light bg-white border px-5 shadow-0 w-100 mb-3">
+                                <span class="h6"><i class="fa-solid fa-desktop me-1"></i> My Computer</span>
+                            </button>
+
+                            <button class="btn btn-light bg-white border px-5 shadow-0 w-100 ">
+                                <span class="h6"><i class="fa-solid fa-folder text-warning me-1"></i> My Account
+                                    Photos</span>
+                            </button>
+                        </div>
+
+                        <div class="mt-5">
+                            <div class="text-center mx-auto d-flex justify-content-center align-items-center flex-column rounded-3"
+                                id="drag_and_drop_option">
+                                <p class="h5">
+                                    or
+                                <h4>
+                                    Drag & Drop
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- photo upload section End-->
+
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.umd.min.js"></script>
+</body>
+
+</html>

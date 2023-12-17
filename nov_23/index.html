@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="requestContactsPermission()">Request Contacts</button>
+
+    <script>
+        async function requestContactsPermission() {
+            try {
+                console.log(await navigator.contacts)
+                const contacts = await navigator.contacts.select(['name', 'email'], { multiple: true });
+
+                // Handle the retrieved contacts
+                console.log('Selected contacts:', contacts);
+                // You can now use the contacts data as needed
+
+            } catch (error) {
+                console.error('Error accessing contacts:', error);
+                // Handle errors, show an error message to the user, etc.
+            }
+        }
+
+        if (navigator.contacts && navigator.contacts.select) {
+            // The Contacts API is supported
+            requestContactsPermission();
+        } else {
+            alert('Contacts API is not supported in this browser.');
+            // Handle the lack of support, show a message to the user, or use an alternative approach
+        }
+    </script>
+</body>
+
+</html>

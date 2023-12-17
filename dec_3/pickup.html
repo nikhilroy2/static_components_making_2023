@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css" rel="stylesheet" />
+    <style>
+        body{
+            background: #EFEFEF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="row mb-2">
+            <div class="col-12 d-flex">
+                <h3 class="text-black text-nowrap">Select Shipping or Pickup</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 mb-3 mb-xl-0">
+                <div class="border bg-white shadow-1">
+                    <ul class="list-unstyled">
+                        <li class="  p-3 bg-primary text-white">
+                            <div class="form-check d-flex">
+                                <input style="min-width: 18px" class="form-check-input" name="pickup" checked
+                                    type="radio" value="" id="home_pickup_checkbox" />
+                                <div class="content_check">
+                                    <label class="form-check-label" for="home_pickup_checkbox">Ship to Home</label>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="  p-3">
+                            <div class="form-check d-flex">
+                                <input style="min-width: 18px" class="form-check-input" name="pickup" type="radio"
+                                    value="" id="store_pickup_checkbox" />
+                                <div class="content_check">
+                                    <label class="form-check-label" for="store_pickup_checkbox">Pick up in Store</label>
+                                    <p class="small">
+                                        Pick up in Store available at Walgreens, CVS
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-9">
+                <div class="border bg-white shadow-1">
+                    <div class="bg-primary mb-3 text-white p-3">
+                        <h6 class="">Enter your shipping address</h6>
+                    </div>
+                    <form action="" class="row g-3 p-3">
+
+                        <!-- First Name -->
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="" class="form-label">First Name</label>
+                                <input required type="text" name="first_name" placeholder="ex. John" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="" class="form-label">Last Name</label>
+                                <input required type="text" name="last_name" placeholder="ex. Smith" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- Street -->
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="" class="form-label">Street</label>
+                                <input required type="text" name="street" placeholder="ex. 100 Montgomery Street"
+                                    class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- Address 1-->
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="" class="form-label">Address 1</label>
+                                <input required type="text" name="address_1" placeholder="" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- Address 2-->
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="" class="form-label">Address 2</label>
+                                <input type="text" name="address_2" placeholder="" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- State -->
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="" class="form-label">STATE/PROVINCE</label>
+                                <select required name="" id="" class="form-control form-select">
+                                    <option value="" disabled> Select One</option>
+                                    <option value="A">A</option>
+                                    <option value="A">A</option>
+                                    <option value="A">A</option>
+                                    <option value="A">A</option>
+                                    <option value="A">A</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- zip code -->
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="" class="form-label">ZIP CODE</label>
+                                <input required type="text" name="zip_code" placeholder="ex. 941404" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- country -->
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="" class="form-label">Country</label>
+                                <select required name="" id="" class="form-select form-control">
+                                    <option value="" disabled> United States</option>
+                                    <option value="A">A</option>
+                                    <option value="A">A</option>
+                                    <option value="A">A</option>
+                                    <option value="A">A</option>
+                                    <option value="A">A</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- form action -->
+                        <div class="col-12 text-center mt-5 mb-4">
+                            <button class="btn btn-primary rounded-pill px-5">Continue</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.umd.min.js"></script>
+</body>
+
+</html>
