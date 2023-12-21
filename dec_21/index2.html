@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>AGL5 - Family Collaboration</title>
+  <!-- Include Bootstrap and MDBootstrap CSS files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+  <!-- Custom styles -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      background-color: #343a40 !important;
+    }
+
+    .jumbotron {
+      background-image: url('https://via.placeholder.com/1600x600');
+      background-size: cover;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .jumbotron h1 {
+      font-size: 3.5rem;
+    }
+
+    .jumbotron p {
+      font-size: 1.5rem;
+    }
+
+    .jumbotron hr {
+      width: 10%;
+      border: 2px solid white;
+    }
+
+    .subscription-section {
+      margin-top: 50px;
+    }
+
+    .card {
+      border-radius: 15px;
+      overflow: hidden;
+      margin: 20px 0;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .card-text {
+      font-size: 1.2rem;
+    }
+
+    .animated-section {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    .animated-section.animated {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+    <a class="navbar-brand" href="#">AGL5</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Subscription</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="jumbotron">
+    <div class="container animated-section">
+      <h1 class="display-4">AGL5 - Grow with Your Family</h1>
+      <p class="lead">An effort to help each other thrive...</p>
+      <hr class="my-4">
+      <p>Money Back Guarantee - If you did not find good use of our system, we will refund your money back.</p>
+    </div>
+  </div>
+
+  <!-- Subscription Sections -->
+  <div class="container subscription-section">
+    <div class="row animated-section">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="https://via.placeholder.com/800x400" class="card-img-top" alt="Student Centered Activities">
+          <div class="card-body">
+            <h2 class="card-title">Student Centered Activities</h2>
+            <p class="card-text">Showcase your word power, log your chores, track your learning, and more.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="https://via.placeholder.com/800x400" class="card-img-top" alt="Home-maker Subscriber">
+          <div class="card-body">
+            <h2 class="card-title">Home-maker Subscriber</h2>
+            <p class="card-text">Store your receipts, track your items, set alerts, and manage household tasks efficiently.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4 animated-section">
+      <div class="col-md-12">
+        <div class="card">
+          <img src="https://via.placeholder.com/1600x800" class="card-img-top" alt="Everything Subscription">
+          <div class="card-body">
+            <h2 class="card-title">Everything Subscription</h2>
+            <p class="card-text">Enjoy all the features offered to support family collaboration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4 animated-section">
+      <div class="col-md-12">
+        <div class="card">
+          <img src="https://via.placeholder.com/1600x800" class="card-img-top" alt="Our Mission">
+          <div class="card-body">
+            <h2 class="card-title">Our Mission</h2>
+            <p class="card-text">Join us in becoming a Planet Protector. Your support is crucial.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap and MDBootstrap JS files -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+  <!-- Custom Script for Animation -->
+  <script>
+   
