@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #EFEFEF;
+        }
+
+        .main_content_color {
+            background-image: linear-gradient(90deg, #0078d4, #c218ec);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+
+        .img_wrapper {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            padding-left: 150px;
+        }
+
+        .img_wrapper img {
+            width: 100%;
+            position: absolute;
+            transform-origin: bottom left;
+        }
+
+        .img_wrapper img:nth-child(1) {
+            z-index: 2;
+        }
+
+        .img_wrapper img:nth-child(2) {
+            transform: translateX(0) rotate(0deg);
+            animation: .5s linear animateImg1 forwards;
+        }
+
+        @keyframes animateImg1 {
+            100% {
+                transform: translateX(-50%) rotate(-15deg);
+            }
+        }
+
+        .img_wrapper img:nth-child(3) {
+            transform: translateX(0) rotate(0deg);
+            animation: .5s linear animateImg2 forwards;
+        }
+
+        @keyframes animateImg2 {
+            100% {
+                transform: translateX(50%) rotate(15deg);
+            }
+        }
+
+        .jumbotron .jumbotron_content {
+            /* background-image: url('https://via.placeholder.com/1600x600');
+        background-size: cover; */
+            color: white;
+            height: 70vh;
+            background-image: linear-gradient(90deg, rgba(11, 133, 226, 0.4), rgba(0, 93, 165, 0.3));
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="jumbotron">
+            <div class="jumbotron_content">
+                <div class="container-fluid h-100">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <div class="col-12">
+                            <div class="jumbotron">
+                                <div class="row h-100 justify-content-center align-items-center">
+                                    <div class="col-lg-12 h-auto">
+                                        <div class="h-100 text-black text-start p-3 text-center">
+                                            <h1 class="display-1 fw-bold main_content_color mb-4">
+                                                <a href="/" class="d-inline-block mb-3">
+                                                    <img height="100px" src="https://agl5.com/static/img/logo/logo.png"
+                                                        alt="logo">
+                                                </a>
+                                                <br>
+                                                Apps for the <br> Essentials
+                                            </h1>
+                                            <div class="btn-group shadow-0 rounded-0">
+                                                <button class="btn btn-primary me-3 shadow-0 rounded-0">
+                                                    KIDS
+                                                </button>
+                                                <button class="btn btn-primary me-3 shadow-0 rounded-0">
+                                                    PARENTS
+                                                </button>
+                                                <button class="btn btn-primary me-3 shadow-0 rounded-0">
+                                                    MOM
+                                                </button>
+                                                <button class="btn btn-primary me-3 shadow-0 rounded-0">
+                                                    MOMS
+                                                </button>
+                                                <button class="btn btn-primary me-3 shadow-0 rounded-0">
+                                                    FAMILY
+                                                </button>
+                                                <button class="btn btn-primary me-3 shadow-0 rounded-0">
+                                                    COMMUNITY
+                                                </button>
+                                                <button class="btn btn-primary shadow-0 rounded-0">
+                                                    MORE..
+                                                </button>
+                                            </div>
+
+                                            <div class="text-center my-3">
+                                                <a href="#" class="shadow-0 btn btn-danger">
+                                                    <h3 class="mb-0 text-uppercase">
+                                                        JOIN US
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="my-4">
+            <div class="container-fluid">
+                <div class="row g-4">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="https://plus.unsplash.com/premium_photo-1663127721165-f29d5bbd3da1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BlbGxpbmd8ZW58MHwwfDB8fHww"
+                            height="320px" style="object-fit: cover;"  class="card-img-top" alt="Fissure in Sandstone" />
+                            <div class="card-body text-black">
+                                <h2 class="card-title main_content_color">
+                                    <img height="45px" src="https://storage.googleapis.com/mktdms_images_served/agl5_logo/join_us/spelling_logo.jpg" alt="" class="me-2">
+                                    Ultimate Spellers</h2>
+                                <p class="card-text h5 my-4">Learn vocabularies, definitions or bank the words to learn
+                                    naturally with the curriculam.</p>
+                                <a href="#!" class="btn btn-primary shadow-0" data-mdb-ripple-init>
+                                    <h5 class="text-center mb-0 ">Take me there...</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1583468982228-19f19164aee2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFJlYWRlcnN8ZW58MHwwfDB8fHww"
+                            height="320px" style="object-fit: cover;"  class="card-img-top" alt="Fissure in Sandstone" />
+                            <div class="card-body text-black">
+                                <h2 class="card-title main_content_color">
+                                    <img height="45px" src="https://pbs.twimg.com/media/FsKWHUjXoAM__Ot?format=jpg&name=large" alt="" class="me-2">
+                                    Ultimate Readers</h2>
+                                <p class="card-text h5 my-4">Learn vocabularies, definitions or bank the words to learn
+                                    naturally with the curriculam.</p>
+                                <a href="/quiz/ultimate-spellers" class="btn btn-primary shadow-0" data-mdb-ripple-init>
+                                    <h5 class="text-center mb-0 ">Take me there...</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFzc2V0fGVufDB8MHwwfHx8MA%3D%3D"
+                            height="320px" style="object-fit: cover;"  class="card-img-top" alt="Fissure in Sandstone" />
+                            <div class="card-body text-black">
+                                <h2 class="card-title main_content_color">
+                                    <img height="45px" src="https://storage.googleapis.com/mktdms_images_served/agl5_logo/Asset-Watch-logos.png" alt="" class="me-2">
+                                    Asset Watch</h2>
+                                <p class="card-text h5 my-4">Simple tool to watch your assets</p>
+                                <a href="/my-drive" class="btn btn-primary shadow-0" data-mdb-ripple-init>
+                                    <h5 class="text-center mb-0 ">Take me there...</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="https://plus.unsplash.com/premium_photo-1661410972384-705df7a0edba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE3fHxBbGVydHN8ZW58MHwwfDB8fHww"
+                            height="320px" style="object-fit: cover;"  class="card-img-top" alt="Fissure in Sandstone" />
+                            <div class="card-body text-black">
+                                <h2 class="card-title main_content_color">
+                                    <img height="45px" src="https://img.icons8.com/?size=45&id=XDLn7AZJ2KGj&format=png" alt="" class="me-2">
+                                    My Alerts</h2>
+                                <p class="card-text h5 my-4">A simple application to monitor your Activities ...</p>
+                                <a href="#!" class="btn btn-primary shadow-0" data-mdb-ripple-init>
+                                    <h5 class="text-center mb-0 ">Take me there...</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1695653422259-8a74ffe90401?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MTV8fGZvb2R8ZW58MHwwfDB8fHww"
+                            height="320px" style="object-fit: cover;"  class="card-img-top" alt="Fissure in Sandstone" />
+                            <div class="card-body text-black">
+                                <h2 class="card-title main_content_color">
+                                    <img height="45px" src="https://storage.googleapis.com/mktdms_images_served/agl5_index/FAC-1.png" alt="" class="me-2">
+                                    Food and Cost</h2>
+                                <p class="card-text h5 my-4">An Application to monitor food purchase and usage.</p>
+                                <a href="/foodandcost" class="btn btn-primary shadow-0" data-mdb-ripple-init>
+                                    <h5 class="text-center mb-0 ">Take me there...</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1476231790875-016a80c274f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fENhcmVlcnxlbnwwfDB8MHx8fDA%3D"
+                            height="320px" style="object-fit: cover;" class="card-img-top" alt="Fissure in Sandstone" />
+                            <div class="card-body text-black">
+                                <h2 class="card-title main_content_color">
+                                    <img height="45px" src="https://storage.googleapis.com/mktdms_images_served/agl5_index/CS-1.png" alt="" class="me-2">
+                                    Career Shoutout</h2>
+                                <p class="card-text h5 my-4">Place to learn about career plans / Path from others !!</p>
+                                <a href="#!" class="btn btn-primary shadow-0" data-mdb-ripple-init>
+                                    <h5 class="text-center mb-0 ">Take me there...</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="https://plus.unsplash.com/premium_photo-1661779054933-3b929260ec41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fEFsYXJtc3xlbnwwfDB8MHx8fDA%3D"
+                              height="320px" style="object-fit: cover;"  class="card-img-top" alt="Fissure in Sandstone" />
+                            <div class="card-body text-black">
+                                <h2 class="card-title main_content_color">
+                                    <img height="45px" src="https://storage.googleapis.com/mktdms_images_served/agl5_logo/MyAlarms-4.png" alt="" class="me-2">
+                                    My Alarms</h2>
+                                <p class="card-text h5 my-4">A simple application to monitor your Activities ...</p>
+                                <a href="/my-alarms" class="btn btn-primary shadow-0" data-mdb-ripple-init>
+                                    <h5 class="text-center mb-0 ">Take me there...</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+
+</body>
+
+</html>
